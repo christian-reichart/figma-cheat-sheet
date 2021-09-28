@@ -8,6 +8,9 @@
         :tip="tip"
       />
     </div>
+    <p class="bottom-text">
+      Something missing? :) Write me at <a href="mailto:hello@christianreich.art">hello@christianreich.art</a>.
+    </p>
   </div>
 </template>
 
@@ -46,5 +49,10 @@ body {
 
 .tips {
   margin: 0 30px;
+  margin-bottom: 60px;
+}
+.bottom-text {
+  margin-bottom: 60px;
+  text-align: center;
 }
 </style>

@@ -52,5 +52,20 @@
                 "key": "LMB"
             }
         ]
+    },
+    {
+        "id":"3",
+        "title":"Copy link to specific screen or element",
+        "description":"If you want to share a specific Frame or Group with another person, you can right-click to copy the link to this element. Note: This does not work for regular layers, just Frames, Groups and Components.",
+        "img": {
+            "src": "copy-link-to-element.gif",
+            "width": "640",
+            "height": "400"
+        },
+        "keys": [
+            {
+                "key": "RMB"
+            }
+        ]
     }
 ]
