@@ -43,4 +43,8 @@ body {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
+
+.tips {
+  margin: 0 40px;
+}
 </style>

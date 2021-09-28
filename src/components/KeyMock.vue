@@ -4,7 +4,7 @@
     <img v-else-if="keyValue === 'Scroll'" v-lazy="{src: require('@/assets/img/scroll.svg')}" />
     <div v-else class="key-mock">
         <div class="chars">
-            {{ keyValue }}
+            {{ getDisplayValue(keyValue) }}
         </div>
     </div>
 </template>
@@ -14,6 +14,20 @@
         name: 'KeyMock',
         props: {
             keyValue: String,
+        },
+        methods: {
+            getDisplayValue(val) {
+                switch (val){
+                    case 'Cmd':
+                        return '⌘';
+                    case 'Shift':
+                        return '⇧';
+                    case 'Opt':
+                        return '⌥';
+                    default:
+                        return val;
+                }
+            }
         }
     }
 </script>

@@ -65,6 +65,20 @@ import KeyMock from './KeyMock.vue'
     .image {
         width: 50%;
     }
+
+    @media (max-width: 800px) {
+        flex-direction: column;
+
+        .text {
+            width: 100%;
+            padding-right: 0;
+            padding-bottom: 30px;
+        }
+
+        .image {
+            width: 100%;
+        }
+    }
 }
 
 .image-wrapper {
@@ -82,6 +96,11 @@ import KeyMock from './KeyMock.vue'
             border: 3px solid $color-black;
         }
     }
+
+    @media (max-width: 800px) {
+        height: auto !important;
+    }
+
 }
 
 .shortcuts {

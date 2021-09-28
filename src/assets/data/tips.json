@@ -34,5 +34,23 @@
                 "key": "LMB"
             }
         ]
+    },
+    {
+        "id":"2",
+        "title":"Select a single layer inside a group",
+        "description":"Often elements are placed inside a group. To select a single layer, hold Cmd/Ctrl while left-clicking. You can also achieve this by double clicking on your desired layer one or more times.",
+        "img": {
+            "src": "select-inside-group.gif",
+            "width": "640",
+            "height": "400"
+        },
+        "keys": [
+            {
+                "key": "Cmd"
+            },
+            {
+                "key": "LMB"
+            }
+        ]
     }
 ]
