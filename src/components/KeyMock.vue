@@ -15,15 +15,20 @@
         props: {
             keyValue: String,
         },
+        computed: {
+            isCtrl() {
+                return this.$store.state.isCtrlLayout;
+            }
+        },
         methods: {
             getDisplayValue(val) {
                 switch (val){
                     case 'Cmd':
-                        return '⌘';
+                        return this.isCtrl ? 'Ctrl' : '⌘';
                     case 'Shift':
                         return '⇧';
                     case 'Opt':
-                        return '⌥';
+                        return this.isCtrl ? 'Alt' : '⌥';
                     default:
                         return val;
                 }

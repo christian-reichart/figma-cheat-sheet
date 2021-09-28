@@ -1,6 +1,7 @@
 <template>
     <header>
-        <div class="splits">
+        <div class="inner-header">
+        <div class="logo">
             <div class="split">
                 <img class="logo" v-lazy="{src: require('@/assets/figma-logo.svg')}" />
             </div>
@@ -9,12 +10,18 @@
                 <p>For developers using inspect mode</p>
             </div>
         </div>
+        <toggle-keyboard />
+        </div>
     </header>
 </template>
 
 <script>
+import ToggleKeyboard from './ToggleKeyboard.vue'
     export default {
-        name: 'CustomHeader'
+        name: 'CustomHeader',
+        components: {
+            ToggleKeyboard,
+        }
     }
 </script>
 
@@ -24,14 +31,21 @@
 
 header {
     background-color: $color-grey-light;
-    padding: 40px 20px;
+    padding: 40px 30px;
+
+    .inner-header {
+        max-width: 1440px;
+        margin: 0 auto;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
 }
-.splits {
+.logo {
     display: flex;
-    justify-content: center;
 
     .split {
-        margin: 0 20px;
+        margin-right: 20px;
     }
 }
 
@@ -54,5 +68,21 @@ header {
 
 .logo {
     max-height: 100px;
+}
+
+@media (max-width: 700px) {
+    .logo {
+        max-height: 60px;
+    }
+
+    .text {
+        h1 {
+            font-size: 20px;
+        }
+
+        p {
+            font-size: 14px;
+        }
+    }
 }
 </style>
