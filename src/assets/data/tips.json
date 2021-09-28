@@ -1,0 +1,38 @@
+[
+    {
+        "id":"0",
+        "title":"Zoom in and out",
+        "description":"Zoom in and out of the canvas. The center of the Zoom will be the position of your mouse cursor.",
+        "img": {
+            "src": "zoom-in-out.gif",
+            "width": "640",
+            "height": "400"
+        },
+        "keys": [
+            {
+                "key": "Cmd"
+            },
+            {
+                "key": "Scroll"
+            }
+        ]
+    },
+    {
+        "id":"1",
+        "title":"Drag the canvas around",
+        "description":"With the hand tool you can navigate on the 2D surface. Hold space when dragging your mouse.",
+        "img": {
+            "src": "hand-tool.gif",
+            "width": "640",
+            "height": "400"
+        },
+        "keys": [
+            {
+                "key": "Space"
+            },
+            {
+                "key": "LMB"
+            }
+        ]
+    }
+]
