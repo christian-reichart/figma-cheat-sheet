@@ -10,7 +10,7 @@
         },
         "keys": [
             {
-                "key": "Cmd"
+                "key": "command"
             },
             {
                 "key": "Scroll"
@@ -19,6 +19,21 @@
     },
     {
         "id":"1",
+        "title":"Zoom to 100%",
+        "description":"With the number 0 you can reset the zoom level to be the original 100%. 1 fits the current frame inside your screen. 2 zooms into your current selection.",
+        "img": {
+            "src": "zoom-100.gif",
+            "width": "640",
+            "height": "400"
+        },
+        "keys": [
+            {
+                "key": "0"
+            }
+        ]
+    },
+    {
+        "id":"2",
         "title":"Drag the canvas around",
         "description":"With the hand tool you can navigate on the 2D surface. Hold space when dragging your mouse.",
         "img": {
@@ -36,35 +51,59 @@
         ]
     },
     {
-        "id":"2",
-        "title":"Select a single layer inside a group",
-        "description":"Often elements are placed inside a group. To select a single layer, hold Cmd/Ctrl while left-clicking. You can also achieve this by double clicking on your desired layer one or more times.",
-        "img": {
-            "src": "select-inside-group.gif",
-            "width": "640",
-            "height": "400"
-        },
-        "keys": [
-            {
-                "key": "Cmd"
-            },
-            {
-                "key": "LMB"
-            }
-        ]
-    },
-    {
         "id":"3",
-        "title":"Copy link to specific screen or element",
-        "description":"If you want to share a specific Frame or Group with another person, you can right-click to copy the link to this element. Note: This does not work for regular layers, just Frames, Groups and Components.",
+        "title":"Copy link to specific screen",
+        "description":"If you want to share a specific Frame/Screen with another person, you can right-click on the name to copy the direct link. Note: This does not work for regular layers, just Frames, Groups and Components.",
         "img": {
-            "src": "copy-link-to-element.gif",
+            "src": "copy-link-to-screen.gif",
             "width": "640",
             "height": "400"
         },
         "keys": [
             {
                 "key": "RMB"
+            }
+        ]
+    },
+    {
+        "id":"4",
+        "title":"Select the parent of your selection",
+        "description":"When clicking around in Figma, you will always select singular layers. If you want the selection of the whole group, e.g. for an icon export, you can click the target icon on the right toolbar.",
+        "img": {
+            "src": "select-parent.gif",
+            "width": "640",
+            "height": "400"
+        },
+        "keys": [
+        ]
+    },
+    {
+        "id":"5",
+        "title":"Export your selection",
+        "description":"You can configure the export options of your selection yourself via the 'Export' tab on the right.",
+        "img": {
+            "src": "export.gif",
+            "width": "640",
+            "height": "400"
+        },
+        "keys": [
+        ]
+    },
+    {
+        "id":"6",
+        "title":"Toggle layout grid",
+        "description":"This only works when the designer has configured a layout grid for the screen.",
+        "img": {
+            "src": "toggle-grids.gif",
+            "width": "640",
+            "height": "400"
+        },
+        "keys": [
+            {
+                "key": "control"
+            },
+            {
+                "key": "G"
             }
         ]
     }

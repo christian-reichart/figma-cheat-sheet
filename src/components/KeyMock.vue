@@ -23,12 +23,14 @@
         methods: {
             getDisplayValue(val) {
                 switch (val){
-                    case 'Cmd':
+                    case 'command':
                         return this.isCtrl ? 'Ctrl' : '⌘';
                     case 'Shift':
                         return '⇧';
-                    case 'Opt':
+                    case 'option':
                         return this.isCtrl ? 'Alt' : '⌥';
+                    case 'control':
+                        return this.isCtrl ? 'control' : '⌃';
                     default:
                         return val;
                 }
