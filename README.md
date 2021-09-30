@@ -1,4 +1,8 @@
-# figma-cheat-sheet
+# Figma Cheat Sheet
+
+Quick tips for developers using Inspect Mode
+
+[https://figma-cheat-sheet.christianreich.art/](https://figma-cheat-sheet.christianreich.art/)
 
 ## Project setup
 ```
