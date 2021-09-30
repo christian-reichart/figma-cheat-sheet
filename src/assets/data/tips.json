@@ -32,7 +32,7 @@
     },
     {
         "title":"Drag the canvas around",
-        "description":"With the hand tool you can navigate on the 2D surface. Hold space when dragging your mouse.",
+        "description":"With the hand tool you can navigate on the 2D surface. Hold space when dragging your mouse. You may also use your middle mouse button for this.",
         "img": {
             "src": "hand-tool.gif",
             "width": "640",
