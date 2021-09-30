@@ -27,10 +27,12 @@
                         return this.isCtrl ? 'Ctrl' : '⌘';
                     case 'Shift':
                         return '⇧';
+                    case 'Enter':
+                        return '⏎';
                     case 'option':
                         return this.isCtrl ? 'Alt' : '⌥';
                     case 'control':
-                        return this.isCtrl ? 'control' : '⌃';
+                        return this.isCtrl ? 'Ctrl' : '⌃';
                     default:
                         return val;
                 }

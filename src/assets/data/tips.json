@@ -1,6 +1,5 @@
 [
     {
-        "id":"0",
         "title":"Zoom in and out",
         "description":"Zoom in and out of the canvas. The center of the Zoom will be the position of your mouse cursor.",
         "img": {
@@ -18,7 +17,6 @@
         ]
     },
     {
-        "id":"1",
         "title":"Zoom to 100%",
         "description":"With the number 0 you can reset the zoom level to be the original 100%. 1 fits the current frame inside your screen. 2 zooms into your current selection.",
         "img": {
@@ -33,7 +31,6 @@
         ]
     },
     {
-        "id":"2",
         "title":"Drag the canvas around",
         "description":"With the hand tool you can navigate on the 2D surface. Hold space when dragging your mouse.",
         "img": {
@@ -51,7 +48,6 @@
         ]
     },
     {
-        "id":"3",
         "title":"Copy link to specific screen",
         "description":"If you want to share a specific Frame/Screen with another person, you can right-click on the name to copy the direct link. Note: This does not work for regular layers, just Frames, Groups and Components.",
         "img": {
@@ -66,31 +62,57 @@
         ]
     },
     {
-        "id":"4",
         "title":"Select the parent of your selection",
-        "description":"When clicking around in Figma, you will always select singular layers. If you want the selection of the whole group, e.g. for an icon export, you can click the target icon on the right toolbar.",
+        "description":"When clicking around in Figma, you will always select single layers. If your selection is part of a component, you can select the whole component with the target icon on the right toolbar. Alternatively, you can move up the layer hierarchy with Shift + Enter or drag open a selection box with your mouse.",
         "img": {
             "src": "select-parent.gif",
             "width": "640",
             "height": "400"
         },
         "keys": [
+            {
+                "key": "Shift"
+            }, 
+            {
+                "key": "Enter"
+            }
         ]
     },
     {
-        "id":"5",
         "title":"Export your selection",
-        "description":"You can configure the export options of your selection yourself via the 'Export' tab on the right.",
+        "description":"You can configure the export options of your selection yourself via the 'Export' tab on the right. If there are already export settings defined you can open up a little export window with the shortcut.",
         "img": {
             "src": "export.gif",
             "width": "640",
             "height": "400"
         },
         "keys": [
+            {
+                "key": "command"
+            },
+            {
+                "key": "Shift"
+            },
+            {
+                "key": "E"
+            }
         ]
     },
     {
-        "id":"6",
+        "title":"Pick a color with the eyedropper tool",
+        "description":"Normally you will find the color of an element when selecting it and looking at the properties at the right side. Sometimes it's useful to check the color of an actual area with the eyedropper. After a left click the hex is saved to your clipboard.",
+        "img": {
+            "src": "color-picker.gif",
+            "width": "640",
+            "height": "400"
+        },
+        "keys": [
+            {
+                "key": "I"
+            }
+        ]
+    },
+    {
         "title":"Toggle layout grid",
         "description":"This only works when the designer has configured a layout grid for the screen.",
         "img": {
@@ -104,6 +126,18 @@
             },
             {
                 "key": "G"
+            },
+            {
+                "key": "Ctrl",
+                "isCtrlLayout": "true"
+            },
+            {
+                "key": "Shift",
+                "isCtrlLayout": "true"
+            },
+            {
+                "key": "4",
+                "isCtrlLayout": "true"
             }
         ]
     }

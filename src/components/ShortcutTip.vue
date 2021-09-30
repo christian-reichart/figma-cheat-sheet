@@ -4,9 +4,9 @@
             <h2>{{ tip.title }}</h2>
             <p>{{ tip.description }}</p>
             <div class="shortcuts">
-                <div v-for="key, index in tip.keys" :key="index" class="shortcut">
+                <div v-for="key, index in keys" :key="index" class="shortcut">
                     <key-mock  :keyValue="key.key" />
-                    <div v-if="index < tip.keys.length -1" class="plus">
+                    <div v-if="index < keys.length -1" class="plus">
                         +
                     </div>
                 </div>
@@ -32,6 +32,28 @@ import KeyMock from './KeyMock.vue'
         },
         props: {
             tip: Object,
+        },
+        computed: {
+            isCtrl() {
+                return this.$store.state.isCtrlLayout;
+            },
+            keys() {
+                if (!this.tip.keys) { return undefined; }
+                const filteredKeys = this.tip.keys.filter(key => {
+                    if(this.isCtrl) {
+                        return key.isCtrlLayout
+                    } else {
+                        return !key.isCtrlLayout
+                    }
+                });
+
+                // When no different keys specified, just return all keys (they are the same on both keyboard layouts)
+                if (!filteredKeys.length) {
+                    return this.tip.keys;
+                } else {
+                    return filteredKeys;
+                }
+            }
         }
     }
 </script>
@@ -64,6 +86,8 @@ import KeyMock from './KeyMock.vue'
 
     .image {
         width: 50%;
+        display: flex;
+        justify-content: flex-end;
     }
 
     @media (max-width: 800px) {
