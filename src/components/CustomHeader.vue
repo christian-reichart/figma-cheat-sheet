@@ -3,7 +3,7 @@
         <div class="inner-header">
         <div class="logo">
             <div class="split">
-                <img class="logo" v-lazy="{src: require('@/assets/figma-logo.svg')}" />
+                <img class="logo" src="@/assets/figma-logo.svg" />
             </div>
             <div class="split text">
                 <h1>Figma Cheat Sheet</h1>

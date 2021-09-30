@@ -1,7 +1,7 @@
 <template>
-    <img v-if="keyValue === 'LMB'" v-lazy="{src: require('@/assets/img/lmb.svg')}" />
-    <img v-else-if="keyValue === 'RMB'" v-lazy="{src: require('@/assets/img/rmb.svg')}" />
-    <img v-else-if="keyValue === 'Scroll'" v-lazy="{src: require('@/assets/img/scroll.svg')}" />
+    <img v-if="keyValue === 'LMB'" src="@/assets/img/lmb.svg" />
+    <img v-else-if="keyValue === 'RMB'" src="@/assets/img/rmb.svg" />
+    <img v-else-if="keyValue === 'Scroll'" src="@/assets/img/scroll.svg" />
     <div v-else class="key-mock">
         <div class="chars">
             {{ getDisplayValue(keyValue) }}
